@@ -1,0 +1,33 @@
+{
+  "name": "FlipSideCrypto",
+  "description": "Auto claim bounties from FlipSideCrypto",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js",
+    "scripts": ["script.js"],
+    "persistent": false
+  },
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "css": ["style.css"],
+      "js": ["script.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": {
+      "16": "show-password.png",
+      "32": "show-password.png",
+      "64": "show-password.png",
+      "128": "show-password.png"
+    }
+  },
+  "icons": {
+    "16": "show-password.png",
+    "32": "show-password.png",
+    "64": "show-password.png",
+    "128": "show-password.png"
+  }
+}

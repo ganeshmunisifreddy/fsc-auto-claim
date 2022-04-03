@@ -1,0 +1,18 @@
+{
+  "name": "FlipSideCrypto",
+  "description": "Auto claim bounties from FlipSideCrypto",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "./background.js"
+  },
+  "action": {},
+  "permissions": ["activeTab", "storage", "scripting", "tabs"],
+  "host_permissions": ["https://flipsidecrypto.xyz/*"],
+  "icons": {
+    "16": "fsc.png",
+    "32": "fsc.png",
+    "64": "fsc.png",
+    "128": "fsc.png"
+  }
+}
